@@ -1,0 +1,151 @@
+/* ====== GENERAL STYLING ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f; /* dark tech background */
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #1a1a1a, #222222);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #00ffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+/* ====== HERO / HOME SECTION ====== */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* ====== BUTTONS ====== */
+button, .btn {
+    background: #00ffff;
+    color: #0f0f0f;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background: #ff00ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ====== SECTIONS ====== */
+section {
+    padding: 60px 50px;
+}
+
+/* ====== ABOUT / SERVICES CARDS ====== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,0,255,0.4);
+}
+
+/* ====== IMAGES ====== */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ====== CONTACT FORM ====== */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #00ffff;
+    background-color: #222222;
+    color: #fff;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}

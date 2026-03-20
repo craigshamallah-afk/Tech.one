@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Our Products</h1>
+
+<div class="products">
+
+<!-- Repeat cards -->
+<div class="card">
+<img src="C:\Users\craig\Downloads\producttwo.jpeg" width="300" height="250" alt="gadgets">
+<h3>Laptop</h3>
+<p>High performance laptop</p>
+<p>Ksh 70,000</p>
+<button onclick="addToCart('laptop 70,000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productthree.jpeg" width="300" height="250" alt="gadgets">
+<h3>Smartphone</h3>
+<p>Latest Android phone</p>
+<p>Ksh 30,000</p>
+<button onclick="addToCart('Smartphone30,000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productfour.jpeg" width="300" height="350" alt="gadgets">
+<h3>Headphones</h3>
+<p>Noise cancelling</p>
+<p>Ksh 5,000</p>
+<button onclick="addToCart('Headphones 5000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productsix.jpeg" width="300" height="350" alt="gadgets">
+<h3>Smart Watch</h3>
+<p>Fitness tracking</p>
+<p>Ksh 8,000</p>
+<button onclick="addToCart('Smart Watch 8000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productfive.jpeg" width="300" height="350" alt="gadgets">
+<h3>Tablet</h3>
+<p>Portable and fast</p>
+<p>Ksh 25,000</p>
+<button onclick="addToCart('Tablet 25000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productseven.jpeg" width="300" height="350" alt="gadgets">
+<h3>Keyboard</h3>
+<p>Mechanical keyboard</p>
+<p>Ksh 3,000</p>
+<button onclick="addToCart('Keyboard 3000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\producteight.jpeg" width="300" height="350" alt="gadgets">
+<h3>Speaker</h3>
+<p>Bluetooth speaker</p>
+<p>Ksh 6,000</p>
+<button onclick="addToCart('Speaker 6000')">addToCart</button>
+</div>
+
+<div class="card">
+<img src="C:\Users\craig\Downloads\productnine.jpeg" width="300" height="350" alt="gadgets">
+<h3>Camera</h3>
+<p>HD digital camera</p>
+<p>Ksh 45,000</p>
+<button onclick="addToCart('Camera 45000')">addToCart</button>
+</div>
+
+<h2>Shopping Cart</h2>
+<ul id="cart"></ul>
+<p id="total">Total: Ksh 0</p>
+<button onclick="clearCart('gadgets')">Clear Cart</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
